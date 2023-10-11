@@ -13,8 +13,8 @@ export default function App() {
       <Stack.Navigator
         initialRouteName='Login'
       >
-        <Stack.Screen name="Login" component={LoginScreen}/>
-        <Stack.Screen name="Home" component={HomeScreen}/>
+        <Stack.Screen name="Login" component={LoginScreen} options= {{title:'Inicio de sesion'}}/>
+        <Stack.Screen name="Home" component={HomeScreen} options={{title:'Pantalla principal'}}/>
       </Stack.Navigator>
     </NavigationContainer>
     

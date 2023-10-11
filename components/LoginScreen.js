@@ -34,7 +34,9 @@ export default function LoginScreen({navigation}){
     const handleSignIn = () =>{
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential)=>{
-            console.log("Conexión exitosa ...");
+            setEmail("")
+            setPassword("")
+            // console.log("Conexión exitosa ...");
             navigation.navigate('Home',{email:email})
         })
         .catch((error)=>{
